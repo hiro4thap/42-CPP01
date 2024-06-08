@@ -17,7 +17,7 @@ OBJS		= $(addprefix $(OBJ_DIR), $(OBJ))
 
 all:$(NAME)
 
-$(OBJ_DIR)%.o:$(SRC_DIR)%.cpp
+$(OBJ_DIR)%.o:$(SRC_DIR)%.cpp *.hpp
 	mkdir -p $(OBJ_DIR)
 	$(COMPILE) $(CFLAGS) -o $@ -c $<
 
