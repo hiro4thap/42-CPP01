@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 15:05:14 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/15 20:10:20 by hiono            ###   ########.fr       */
+/*   Updated: 2024/06/15 19:52:08 by hiono            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,34 @@ void	Harl::complain(std::string level)
 {
 	void	(Harl::*fct[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	std::string	harl_levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	bool	other = true;
+	int		level_int = -1;
 
 	for (int i = 0; i < 4; i++)
 	{
 		if (level == harl_levels[i])
-		{
-			other = false;
-			(this->*(fct[i]))();
-		}
+			level_int = i;
 	}
-	if (other)
-		std::cout << "Invalid harl level" << '\n';
+	switch(level_int)
+	{
+		case 0:
+			for (int i = level_int; i < 4; i++)
+				(this->*(fct[i]))();
+			break;
+		case 1:
+			for (int i = level_int; i < 4; i++)
+				(this->*(fct[i]))();
+			break;
+		case 2:
+			for (int i = level_int; i < 4; i++)
+				(this->*(fct[i]))();
+			break;
+		case 3:
+			for (int i = level_int; i < 4; i++)
+				(this->*(fct[i]))();
+			break;
+		default:
+			std::cout << "Invalid harl level" << '\n';
+	}
 }
 
 void	Harl::debug(void)

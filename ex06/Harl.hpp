@@ -1,19 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/15 13:59:22 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/15 20:11:38 by hiono            ###   ########.fr       */
+/*   Created: 2024/06/15 15:03:09 by hiono             #+#    #+#             */
+/*   Updated: 2024/06/15 20:12:09 by hiono            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef H_MAIN_HPP
-# define H_MAIN_HPP
+#ifndef H_HARL_HPP
+# define H_HARL_HPP
 
 # include <iostream>
-# include <fstream>
+
+class	Harl
+{
+public:
+	Harl();
+	~Harl();
+	void	complain(std::string level);
+
+private:
+	void	debug(void);
+	void	info(void);
+	void	warning(void);
+	void	error(void);
+};
 
 #endif

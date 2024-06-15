@@ -6,12 +6,14 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 15:03:09 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/15 18:19:11 by hiono            ###   ########.fr       */
+/*   Updated: 2024/06/15 20:12:13 by hiono            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <map>
+#ifndef H_HARL_HPP
+# define H_HARL_HPP
+
+# include <iostream>
 
 class	Harl
 {
@@ -25,5 +27,6 @@ private:
 	void	info(void);
 	void	warning(void);
 	void	error(void);
-	std::map<std::string, void(Harl::*)()>	_func_map;
 };
+
+#endif
