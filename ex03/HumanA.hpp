@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 19:20:56 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/08 16:55:54 by hiono            ###   ########.fr       */
+/*   Updated: 2024/06/08 18:35:11 by hiono            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ public:
 	void	attack(void);
 
 private:
-	Weapon		*_weapon;
+	Weapon		&_weapon;
 	std::string	_name;
 };
 
