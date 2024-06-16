@@ -10,8 +10,7 @@ INC_DIR 	= ./
 SRC			= main.cpp \
 			  Zombie.cpp \
 			  zombieHorde.cpp
-INC			= Zombie.hpp \
-			  zombieHorde.hpp
+INC			= Zombie.hpp
 OBJ			= $(SRC:.cpp=.o)
 
 SRCS		= $(addprefix $(SRC_DIR), $(SRC))
