@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:19:13 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/07 19:08:52 by hiono            ###   ########.fr       */
+/*   Updated: 2024/06/17 16:33:08 by hiono            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	main(void)
 {
 	std::cout << "--- before newZombie ---" << "\n";
 	Zombie *zombie = newZombie("zombie1");
+	if (!zombie)
+		return 1;
 	std::cout << "--- after newZombie ---" << "\n";
 	zombie->announce();
 	delete zombie;

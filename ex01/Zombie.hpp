@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:06:33 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/07 18:46:28 by hiono            ###   ########.fr       */
+/*   Updated: 2024/06/17 16:28:47 by hiono            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ public:
 	Zombie(std::string name);
 	~Zombie(void);
 	void 	announce(void);
+	void	setName(std::string name);
 	Zombie(void);
 
 private:

@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:11:30 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/07 18:50:27 by hiono            ###   ########.fr       */
+/*   Updated: 2024/06/17 16:28:39 by hiono            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@ Zombie::~Zombie(void)
 void	Zombie::announce(void)
 {
 	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << "\n";
+}
+
+void	Zombie::setName(std::string name)
+{
+	_name = name;
 }
 
 Zombie::Zombie(void)
