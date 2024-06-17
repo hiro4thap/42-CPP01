@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 19:29:08 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/08 16:53:26 by hiono            ###   ########.fr       */
+/*   Updated: 2024/06/17 16:37:47 by hiono            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define H_HUMANB_HPP
 
 # include <iostream>
-# include <string>
 # include "Weapon.hpp"
 
 class	HumanB
